@@ -4,7 +4,7 @@
 
   const dispatch = createEventDispatcher();
 
-  let maxSeconds = 15; // seconds in half an hour;
+  let maxSeconds = 30 * 60; // seconds in half an hour;
   let counter = writable({
     totalSeconds: maxSeconds,
     running: false,

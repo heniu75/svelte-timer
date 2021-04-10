@@ -613,7 +613,7 @@ var app = (function () {
     		c: function create() {
     			button = element("button");
     			t = text(/*status*/ ctx[0]);
-    			add_location(button, file$1, 58, 0, 1487);
+    			add_location(button, file$1, 58, 0, 1492);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -657,7 +657,7 @@ var app = (function () {
     	let { $$slots: slots = {}, $$scope } = $$props;
     	validate_slots("Timer", slots, []);
     	const dispatch = createEventDispatcher();
-    	let maxSeconds = 15; // seconds in half an hour;
+    	let maxSeconds = 30 * 60; // seconds in half an hour;
     	let counter = writable({ totalSeconds: maxSeconds, running: false });
     	validate_store(counter, "counter");
     	component_subscribe($$self, counter, value => $$invalidate(4, $counter = value));
